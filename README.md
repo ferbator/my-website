@@ -1,6 +1,6 @@
 # MyResume
     Карепин Денис Дмитриевич 
-    Группа: M32071
+    Группа: M33071
     Тема: Резюме
 ## Макет
 <img class="photo" src="plan.png" width="404" height="290" alt="photo"/>
