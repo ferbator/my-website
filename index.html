@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <title>My resume</title>
+    <meta charset="utf-8">
+    <meta name="keywords" content="Карепин, Денис, Дмитриевич, резюме">
+    <link href="outlines.css" rel="stylesheet">
+</head>
+<body>
+<header>
+    <h1>Резюме разработчика.</h1>
+</header>
+<nav>
+    <p>Панель навигации</p>
+    <a href="#bottom">Перейти к нижней части текста</a>
+</nav>
+<main>
+    <section>
+        <h1>Обо мне.</h1>
+        <img class="photo" src="img.jpg" alt="photo">
+        <h4>Контактная информация.</h4>
+        <ul>
+            <li><a href="tel:89185217371"><strong>+7-918-521-73-71</strong></a></li>
+            <li><a href="mailto:HTMLDEN55@gmail.com"><strong>HTMLDEN55@gmail.com</strong></a></li>
+            <li><a href="https://github.com/ferbator"><strong>GitHub</strong></a></li>
+            <li><a href="https://t.me/zaiac"><strong>Telegram</strong></a></li>
+        </ul>
+    </section>
+    <section>
+        <h4>Образование.</h4>
+        <ul>
+            <li>МБОУ «Школа № 47», Ростов-на-Дону 2009 - 2020</li>
+            <li>ITMO Университет, Санкт-Петербург 2020 - ...</li>
+        </ul>
+    </section>
+    <section>
+        <h4>Моя любимая цитата.</h4>
+        <blockquote>
+            <p>Каждый может кинуть камень в волка, но не каждый может кинуть волка в камень.</p>
+            <cite>- Безумно можно быть первым</cite>
+        </blockquote>
+    </section>
+    <article>
+        <h4>Просто Шрек.</h4>
+        <pre>
+ ⡴⠑⡄⠀⠀⠀⠀⠀⠀⠀ ⣀⣀⣤⣤⣤⣀⡀
+⠸⡇⠀⠿⡀⠀⠀⠀⣀⡴⢿⣿⣿⣿⣿⣿⣿⣿⣷⣦⡀
+⠀⠀⠀⠀⠑⢄⣠⠾⠁⣀⣄⡈⠙⣿⣿⣿⣿⣿⣿⣿⣿⣆
+⠀⠀⠀⠀⢀⡀⠁⠀⠀⠈⠙⠛⠂⠈⣿⣿⣿⣿⣿⠿⡿⢿⣆
+⠀⠀⠀⢀⡾⣁⣀⠀⠴⠂⠙⣗⡀⠀⢻⣿⣿⠭⢤⣴⣦⣤⣹⠀⠀⠀⢀⢴⣶⣆
+⠀⠀⢀⣾⣿⣿⣿⣷⣮⣽⣾⣿⣥⣴⣿⣿⡿⢂⠔⢚⡿⢿⣿⣦⣴⣾⠸⣼⡿
+⠀⢀⡞⠁⠙⠻⠿⠟⠉⠀⠛⢹⣿⣿⣿⣿⣿⣌⢤⣼⣿⣾⣿⡟⠉
+⠀⣾⣷⣶⠇⠀⠀⣤⣄⣀⡀⠈⠻⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⡇
+⠀⠉⠈⠉⠀⠀⢦⡈⢻⣿⣿⣿⣶⣶⣶⣶⣤⣽⡹⣿⣿⣿⣿⡇
+⠀⠀⠀⠀⠀⠀⠀⠉⠲⣽⡻⢿⣿⣿⣿⣿⣿⣿⣷⣜⣿⣿⣿⡇
+⠀⠀ ⠀⠀⠀⠀⠀⢸⣿⣿⣷⣶⣮⣭⣽⣿⣿⣿⣿⣿⣿⣿⠇
+⠀⠀⠀⠀⠀⠀⣀⣀⣈⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⠇
+⠀⠀⠀⠀⠀⠀⢿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⠃
+    </pre>
+    </article>
+    <aside>
+        <h4>Код на жаба.</h4>
+        <pre><code>
+        private void initializeBlocked() {
+            int tmpXStart = (int) (viewPort.getX() / tileWidth - 1) % 300;
+            int tmpYStart = (int) (viewPort.getY() / tileHeight - 1);
+            int tmpXFinish = (int) ((viewPort.getWidth()) / tileWidth) - tmpXStart - 1;
+            int tmpYFinish = (int) ((viewPort.getHeight()) / tileHeight) - tmpYStart - 1;
+
+            for (int l = 0; l < numberOfLayers; l++) {
+                String layerValue = map.getLayerProperty(l, "blocked", "false");
+                if (layerValue.equals("true")) {
+                    for (int c = Math.abs(tmpXStart); c < Math.abs(tmpXFinish) % 300; c++) {
+                        for (int r = Math.abs(tmpYStart) % 300; r < Math.abs(tmpYFinish) % 300; r++) {
+                            if (map.getTileId(c, r, l) != 0) {
+                                blocked[c][r] = true;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    </code></pre>
+    </aside>
+    <section>
+        <h3>Формула успеха.</h3>
+        (X+Y)<sup>2</sup>=X<sup>2</sup>+Y<sup>2</sup>
+    </section>
+</main>
+<footer>
+    <a id="bottom"></a>
+    <p><i>Karepin Denis 2022</i></p>
+</footer>
+</body>
+</html>
+
