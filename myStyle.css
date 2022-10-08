@@ -1,0 +1,92 @@
+body {
+    font-family: "Times New Roman";
+
+    background-color: #7b7842;
+    color: #7b7842;
+}
+
+.allContent {
+    display: block;
+    background-color: #a59c46;
+    width: 80%;
+    margin-left: 12%;
+}
+
+.section {
+    float: left;
+    width: 250px;
+    height: 200px;
+    margin-left: 5%;
+}
+
+.aside {
+    display: inline-block;
+    border: 1px solid rgba(59, 58, 58, 0.46);
+    border-radius: 20px;
+    border-shadow: -10px 5px 10px gray;
+    margin-left: 16%;
+    padding-right: 20%;
+    padding-left: 1%;
+    width: 30%;
+    height: 30%;
+    background-color: #e0d46b;
+}
+
+.aboutMe {
+    display: inline-block;
+    border: 1px solid rgba(59, 58, 58, 0.46);
+    border-radius: 20px;
+    border-shadow: -10px 5px 10px gray;
+    padding-right: 1%;
+    padding-left: 4%;
+    margin-bottom: 10px;
+    width: 150%;
+    background-color: #e0d46b;
+
+}
+
+.myContacts {
+    display: inline-block;
+    border: 1px solid rgba(59, 58, 58, 0.46);
+    border-radius: 20px;
+    border-shadow: -10px 5px 10px gray;
+    padding-right: 10%;
+    padding-left: 4%;
+    background-color: #e0d46b;
+}
+
+.header {
+    text-align: center;
+}
+
+.footer {
+    display: inline-block;
+    margin-left: 5%;
+    border: 1px solid rgba(59, 58, 58, 0.46);
+    border-radius: 20px;
+    border-shadow: -10px 5px 10px gray;
+    padding-left: 33%;
+    padding-right: 42.5%;
+    margin-top: 2%;
+    margin-bottom: 1%;
+    background-color: #e0d46b;
+}
+
+.footer p {
+    text-align: center;
+}
+
+.photo {
+    height: 200%;
+    margin-bottom: 2%;
+}
+
+.logo {
+    width: 35px;
+    height: 35px;
+}
+
+.logos li{
+    display: inline;
+    width: 500px;
+}
