@@ -84,6 +84,7 @@ body {
 .logo {
     width: 35px;
     height: 35px;
+    filter: drop-shadow(10px 10px 10px #a59c46);
 }
 
 .logos li{
