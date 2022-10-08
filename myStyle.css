@@ -1,5 +1,5 @@
 body {
-    font-family: "Times New Roman";
+    font-family: "Times New Roman", "Aria", serif;
 
     background-color: #7b7842;
     color: #7b7842;
@@ -53,6 +53,7 @@ body {
     padding-right: 10%;
     padding-left: 4%;
     background-color: #e0d46b;
+    width: 141%;
 }
 
 .header {
@@ -87,7 +88,11 @@ body {
     filter: drop-shadow(10px 10px 10px #a59c46);
 }
 
-.logos li{
-    display: inline;
-    width: 500px;
+.logo:hover {
+    position: relative;
+    transform: rotate(90deg);
+}
+
+.logos li {
+    display: inline-flex;
 }
