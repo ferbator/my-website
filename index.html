@@ -4,45 +4,62 @@
     <title>My resume</title>
     <meta charset="utf-8">
     <meta name="keywords" content="Карепин, Денис, Дмитриевич, резюме">
-    <link href="outlines.css" rel="stylesheet">
+    <link rel="stylesheet" href="myStyle.css">
 </head>
 <body>
-<header>
-    <h1>Резюме разработчика.</h1>
-</header>
-<nav>
-    <p>Панель навигации</p>
-    <a href="#bottom">Перейти к нижней части текста</a>
-</nav>
-<main>
-    <section>
-        <h1>Обо мне.</h1>
-        <img class="photo" src="img.jpg" alt="photo">
-        <h4>Контактная информация.</h4>
-        <ul>
-            <li><a href="tel:89185217371"><strong>+7-918-521-73-71</strong></a></li>
-            <li><a href="mailto:HTMLDEN55@gmail.com"><strong>HTMLDEN55@gmail.com</strong></a></li>
-            <li><a href="https://github.com/ferbator"><strong>GitHub</strong></a></li>
-            <li><a href="https://t.me/zaiac"><strong>Telegram</strong></a></li>
-        </ul>
-    </section>
-    <section>
-        <h4>Образование.</h4>
-        <ul>
-            <li>МБОУ «Школа № 47», Ростов-на-Дону 2009 - 2020</li>
-            <li>ITMO Университет, Санкт-Петербург 2020 - ...</li>
-        </ul>
-    </section>
-    <section>
-        <h4>Моя любимая цитата.</h4>
-        <blockquote>
-            <p>Каждый может кинуть камень в волка, но не каждый может кинуть волка в камень.</p>
-            <cite>- Безумно можно быть первым</cite>
-        </blockquote>
-    </section>
-    <article>
-        <h4>Просто Шрек.</h4>
-        <pre>
+<div class="allContent">
+    <header>
+        <h1 class="header">Резюме разработчика.</h1>
+    </header>
+    <main>
+        <section>
+            <div class="section">
+                <img class="photo" src="avatar.png" alt="photo">
+                <div class="aboutMe">
+                    <h2>Обо мне.</h2>
+                    <h4>Образование.</h4>
+                    <ul>
+                        <li>МБОУ «Школа № 47», Ростов-на-Дону 2009 - 2020</li>
+                        <li>ITMO Университет, Санкт-Петербург 2020 - ...</li>
+                    </ul>
+                </div>
+                <div class="myContacts">
+                    <h4>Контактная информация.</h4>
+                    <ul class="logos">
+                        <li>
+                            <nav><a href="tel:89185217371">
+                                <img class="logo" src="phone.png" alt="photo">
+                            </a></nav>
+                        </li>
+                        <li>
+                            <nav><a href="mailto:HTMLDEN55@gmail.com">
+                                <img class="logo" src="mail.png" alt="photo">
+                            </a></nav>
+                        </li>
+                        <li>
+                            <nav><a href="https://github.com/ferbator">
+                                <img class="logo" src="github.png" alt="photo">
+                            </a></nav>
+                        </li>
+                        <li>
+                            <nav><a href="https://t.me/zaiac">
+                                <img class="logo" src="telegram.png" alt="photo">
+                            </a></nav>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <aside class="aside">
+            <h4>Моя любимая цитата.</h4>
+            <blockquote>
+                <p>Каждый может кинуть камень в волка, но не каждый может кинуть волка в камень.</p>
+                <cite>- Безумно можно быть первым</cite>
+            </blockquote>
+
+            <h4>Просто Шрек.</h4>
+            <pre>
  ⡴⠑⡄⠀⠀⠀⠀⠀⠀⠀ ⣀⣀⣤⣤⣤⣀⡀
 ⠸⡇⠀⠿⡀⠀⠀⠀⣀⡴⢿⣿⣿⣿⣿⣿⣿⣿⣷⣦⡀
 ⠀⠀⠀⠀⠑⢄⣠⠾⠁⣀⣄⡈⠙⣿⣿⣿⣿⣿⣿⣿⣿⣆
@@ -57,10 +74,8 @@
 ⠀⠀⠀⠀⠀⠀⣀⣀⣈⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⠇
 ⠀⠀⠀⠀⠀⠀⢿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⠃
     </pre>
-    </article>
-    <aside>
-        <h4>Код на жаба.</h4>
-        <pre><code>
+            <h4>Код на жаба.</h4>
+            <pre><code>
         private void initializeBlocked() {
             int tmpXStart = (int) (viewPort.getX() / tileWidth - 1) % 300;
             int tmpYStart = (int) (viewPort.getY() / tileHeight - 1);
@@ -81,16 +96,13 @@
             }
         }
     </code></pre>
-    </aside>
-    <section>
-        <h3>Формула успеха.</h3>
-        (X+Y)<sup>2</sup>=X<sup>2</sup>+Y<sup>2</sup>
-    </section>
-</main>
-<footer>
-    <a id="bottom"></a>
-    <p><i>Karepin Denis 2022</i></p>
-</footer>
+        </aside>
+
+    </main>
+    <footer class="footer">
+        <p><i>Karepin Denis 2022</i></p>
+    </footer>
+</div>
 </body>
 </html>
 
