@@ -14,8 +14,8 @@ body {
 
 .section {
     float: left;
-    width: 250px;
-    height: 200px;
+    width: 27%;
+    height: 50%;
     margin-left: 5%;
 }
 
@@ -95,4 +95,132 @@ body {
 
 .logos li {
     display: inline-flex;
+}
+
+
+#grid {
+    display: grid;
+    margin-left: 40%;
+    margin-right: 40%;
+    grid-template-rows:repeat(4, 70px);
+    grid-template-columns: repeat(3, minmax(50px, 250px));
+    grid-gap: 10px;
+}
+
+#grid > div {
+    font-size: 13px;
+    padding: .5em;
+    background: #e0d46b;
+    text-align: center;
+    margin-top: 10%;
+}
+
+@media only screen and (max-width: 1861px) {
+    .aside code {
+        display: inline-block;
+        font-size: 10px;
+    }
+}
+
+@media only screen and (max-width: 1437px) {
+    .section {
+        float: none;
+        display: inline-block;
+        margin-left: 25%;
+    }
+    .aboutMe{
+        display: inline-block;
+        width: 190%;
+    }
+    .myContacts{
+        width: 180%;
+    }
+    .aside{
+        margin-left: 25%;
+        margin-right: 30%;
+        margin-top: 5%;
+    }
+    .aside code{
+        font-size: 8px;
+    }
+    .photo{
+        height: 240%;
+    }
+    #grid{
+        margin-left: 30%;
+    }
+}
+@media only screen and (max-width: 1148px) {
+    .aside code{
+        font-size: 6px;
+    }
+    .aside{
+        margin-left: 25%;
+    }
+    .footer{
+        margin-left: 2%;
+    }
+}
+@media only screen and (max-width: 871px) {
+    .aside code{
+        font-size: 5px;
+    }
+    .section{
+        margin-left: 25%;
+    }
+    #grid{
+        margin-left: 25%;
+    }
+}
+@media only screen and (max-width: 715px) {
+    .photo{
+        height: 150%;
+    }
+    .aside {
+        display: block;
+        margin-left: 20%;
+        width: 47%;
+    }
+    .photo{
+        height: 170%;
+        width: 170%;
+    }
+    .footer{
+        padding-right: 30%;
+        padding-left: 30%;
+        margin-left: 8%;
+    }
+}
+@media only screen and (max-width: 630px) {
+    .section{
+        width: 35%;
+        margin-left: 19%;
+    }
+    .photo{
+        height: 170%;
+        width: 170%;
+    }
+    .aside pre{
+        font-size: 6px;
+    }
+}
+@media only screen and (max-width: 520px) {
+    .aside code{
+        font-size: 4px;
+    }
+    .footer{
+        margin-left: 2%;
+    }
+}
+@media only screen and (max-width: 430px) {
+    .footer {
+        padding-left: 20%;
+        margin-left: 4%;
+    }
+    .aside code{
+        font-size: 2px;
+    }
+    #grid{
+        margin-left: 20%;
+    }
 }
