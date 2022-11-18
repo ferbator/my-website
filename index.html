@@ -6,8 +6,14 @@
     <meta name="keywords" content="Карепин, Денис, Дмитриевич, резюме">
     <meta name="viewport" content="width=device-width, user-scalable=no">
     <link rel="stylesheet" href="myStyle.css">
+    <script src="timeLoad.js"></script>
+    <script src="currentPage.js"></script>
 </head>
 <body>
+<nav class="menuOfPage">
+    <a href="#mainPage">Главная</a>
+    <a href="gallery.html#gallery__head">Галерея с мемами</a>
+</nav>
 <div class="allContent">
     <header>
         <h1 class="header">Резюме разработчика.</h1>
@@ -16,7 +22,7 @@
         <section>
             <div class="section">
                 <img class="photo" src="avatar.png" alt="photo">
-                <div class="aboutMe">
+                <div class="aboutMe" id="mainPage">
                     <h2>Обо мне.</h2>
                     <h4>Образование.</h4>
                     <ul>
@@ -119,6 +125,7 @@
     <footer class="footer">
         <p><i>Karepin Denis 2022</i></p>
     </footer>
+    <div id="timeOfLoading"></div>
 </div>
 </body>
 </html>

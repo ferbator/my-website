@@ -128,99 +128,209 @@ body {
         display: inline-block;
         margin-left: 25%;
     }
-    .aboutMe{
+
+    .aboutMe {
         display: inline-block;
         width: 190%;
     }
-    .myContacts{
+
+    .myContacts {
         width: 180%;
     }
-    .aside{
+
+    .aside {
         margin-left: 25%;
         margin-right: 30%;
         margin-top: 5%;
     }
-    .aside code{
+
+    .aside code {
         font-size: 8px;
     }
-    .photo{
+
+    .photo {
         height: 240%;
     }
-    #grid{
+
+    #grid {
         margin-left: 30%;
     }
 }
+
 @media only screen and (max-width: 1148px) {
-    .aside code{
+    .aside code {
         font-size: 6px;
     }
-    .aside{
+
+    .aside {
         margin-left: 25%;
     }
-    .footer{
+
+    .footer {
         margin-left: 2%;
     }
 }
+
 @media only screen and (max-width: 871px) {
-    .aside code{
+    .aside code {
         font-size: 5px;
     }
-    .section{
+
+    .section {
         margin-left: 25%;
     }
-    #grid{
+
+    #grid {
         margin-left: 25%;
     }
 }
+
 @media only screen and (max-width: 715px) {
-    .photo{
+    .photo {
         height: 150%;
     }
+
     .aside {
         display: block;
         margin-left: 20%;
         width: 47%;
     }
-    .photo{
+
+    .photo {
         height: 170%;
         width: 170%;
     }
-    .footer{
+
+    .footer {
         padding-right: 30%;
         padding-left: 30%;
         margin-left: 8%;
     }
 }
+
 @media only screen and (max-width: 630px) {
-    .section{
+    .section {
         width: 35%;
         margin-left: 19%;
     }
-    .photo{
+
+    .photo {
         height: 170%;
         width: 170%;
     }
-    .aside pre{
+
+    .aside pre {
         font-size: 6px;
     }
 }
+
 @media only screen and (max-width: 520px) {
-    .aside code{
+    .aside code {
         font-size: 4px;
     }
-    .footer{
+
+    .footer {
         margin-left: 2%;
     }
 }
+
 @media only screen and (max-width: 430px) {
     .footer {
         padding-left: 20%;
         margin-left: 4%;
     }
-    .aside code{
+
+    .aside code {
         font-size: 2px;
     }
-    #grid{
+
+    #grid {
         margin-left: 20%;
     }
+}
+
+#gallery__head{
+    text-align: center;
+    font-weight: 300;
+    color: #e0d46b;
+    font-size: 3em;
+}
+
+.gallery {
+    margin-top: 5%;
+    display: grid;
+    grid-template-columns: repeat(2, 5fr);
+    grid-template-rows: repeat(4, 25vw);
+    gap: 20px;
+    list-style: none;
+    padding: 0;
+    text-align: center;
+}
+
+.gallery figure {
+    position: relative;
+    width: 100%;
+    display: inline-block;
+}
+
+.gallery__photo {
+    width: 60%;
+    height: 101%;
+    object-fit: cover;
+    filter: blur(5px); /* Размытие изображения */
+    transition: 1s; /* Время перехода */
+}
+
+.gallery__photo:hover {
+    filter: blur(0); /* Отменяем размытие */
+}
+
+.containerForGallery {
+    width: 88%;
+    margin: 2rem auto;
+}
+
+/*.elementOfGallery1 {*/
+/*    grid-row-start: 1;*/
+/*    grid-row-end: 2;*/
+/*    grid-column-start: 1;*/
+/*    grid-column-end: 3;*/
+/*}*/
+/*.elementOfGallery2 {*/
+/*    grid-row-start: 1;*/
+/*    grid-row-end: 2;*/
+/*    grid-column-start: 3;*/
+/*    grid-column-end: 5;*/
+/*}*/
+#timeOfLoading{
+    color: black;
+    margin-left: auto;
+    margin-right: auto;
+}
+.nav{
+    list-style-type: none;
+    gap:1vw;
+    padding: 0;
+
+}
+.menuOfPage a{
+    text-decoration: none;
+    color: #e0d46b;
+    text-transform: uppercase;
+    line-height: 1;
+    -webkit-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+.menuOfPage{
+    display: block;
+    margin-left: 40%;
+    margin-right: 40%;
+
+}
+.menuOfPage a:hover{
+    color: black;
+}
+.navs{
+    scroll-margin-top: 160px;
+    background-color: white;
 }
