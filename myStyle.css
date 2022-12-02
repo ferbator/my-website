@@ -290,18 +290,6 @@ body {
     margin: 2rem auto;
 }
 
-/*.elementOfGallery1 {*/
-/*    grid-row-start: 1;*/
-/*    grid-row-end: 2;*/
-/*    grid-column-start: 1;*/
-/*    grid-column-end: 3;*/
-/*}*/
-/*.elementOfGallery2 {*/
-/*    grid-row-start: 1;*/
-/*    grid-row-end: 2;*/
-/*    grid-column-start: 3;*/
-/*    grid-column-end: 5;*/
-/*}*/
 #timeOfLoading{
     color: black;
     margin-left: auto;
