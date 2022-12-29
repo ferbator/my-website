@@ -120,3 +120,34 @@ h1 {
 }
 /* todo-items style ends */
 /* container style ends */
+.preloader, .fa {
+    margin: 2vh;
+    text-align: center;
+}
+
+#users{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.person{
+    background: #fff;
+    border-radius: 10px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.name__of__person{
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+.username__of__person{
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.email__of__person{
+    font-style: italic;
+}
+
